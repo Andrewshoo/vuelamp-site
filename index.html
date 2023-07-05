@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vuelamp</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <img class="menu-img" src="image/menu.png">
+      <img class="logo" src="image/logo.png">
+      <ul>
+        <li><a href="search.html?">Поиск картинок</a></li>
+        <li><a href="weather-app.html">Погода</a></li>
+        <li><a href="">Contemporary</a></li>
+        <li><a href="">Affordable</a></li>
+      </ul>
+      <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+
+    <div class="lamp-container">
+      <img src="image/lamp.png" class="lamp">
+      <img src="image/light.png" class="light" id="light">
+    </div>
+
+    <div class="text-container">
+      <h1>Latest<br>in Lighting</h1>
+      <p>This is the first lamp from our company. We're
+        making a huge collection of modern Lamps in all categories from home use to office use.
+      </p>
+      <a href="">Check All Collections</a>
+      <div class="control">
+        <p>04</p>
+        <div class="line"><span></span></div>
+        <p>05</p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function toggleBtn() {
+      btn.classList.toggle("active");
+      light.classList.toggle("on");
+    }
+  </script>
+</body>
+</html>
