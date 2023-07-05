@@ -151,4 +151,9 @@ body {
   font-size: 14px;
   margin-top: -3px;
 }
+
+.col img {
+  width: 20px;
+  margin-right: 10px;
+}
 }
